@@ -1,13 +1,15 @@
 bmi = () => {
-    let weight = document.getElementById("weight").value;
-    let height = document.getElementById("height").value;
+    const weight = document.getElementById("weight").value;
+    const height = document.getElementById("height").value;
+
     let para = document.getElementById("para");
 
     if(weight < 1 || height < 1){
         para.innerHTML = "กรุณากรอกข้อมูลให้ถูกต้อง";
     }else{
-        let bmi1 = weight / (height * height);
-        let bmi2 = bmi1.toFixed(1);
+        const bmi1 = weight / (height * height);
+        const bmi2 = bmi1.toFixed(1);
+        
         let res;
 
         if(bmi2 < 18.5){
